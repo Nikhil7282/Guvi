@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <div class="cemter">
+      <h2>Register</h2>
+      <form autocomplete="off" action="" method="post">
+        <input type="hidden" id="action" value="register" />
+        <label for="">Name</label>
+        <input type="text" id="name" value="" /> <br />
+        <label for="">Username</label>
+        <input type="text" id="username" value="" /> <br />
+        <label for="">Password</label>
+        <input type="password" id="password" value="" /> <br />
+        <label for="">Age</label>
+        <input type="text" id="age" value="" /> <br />
+        <label for="">Contact number</label>
+        <input type="text" id="contactnumber" value="" /> <br />
+        <button type="button" onclick="submitData();">Register</button>
+      </form>
+      <a href="login.html">Go To Login</a>
+    </div>
+    <br />
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
