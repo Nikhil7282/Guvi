@@ -2,7 +2,6 @@
 
 
   function submitData(){
-    console.log("Thaniuhsi")
     $(document).ready(function(){
       var data = {
         name: $("#name").val(),
@@ -14,7 +13,6 @@
       };
       console.log($("#contactnumber").val());
       localStorage.setItem('username',$("#username").val())                                                                                                             
-
       $.ajax({
         url: 'php/function.php',
         type: 'post',
