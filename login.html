@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
-    <h2>Login</h2>
+    <div class="log1"><h2>Login</h2></div>
+    
     <div class="center">
-      <form autocomplete="off" action="" method="post">
-        <input type="hidden" id="action" value="login" />
-        <label for="">Username</label>
-        <input type="text" id="username" value="" /> <br />
-        <label for="">Password</label>
-        <input type="password" id="password" value="" /> <br />
-        <button type="button" onclick="submitDataLogin();">Login</button>
+      <form class="p-3 bg-light border rounded" action="" method="post">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username:</label>
+          <input type="text" class="form-control" id="username" name="username" value="" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" value="" required>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Log in</button>
+        <a href="index.html">Go To Register</a>
       </form>
+      
     </div>
+    
 
     <br />
-    <a href="index.html">Go To Register</a>
     <script src="./js/scriptlogin.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
